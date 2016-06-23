@@ -17,19 +17,23 @@ angular.module('storeApp')
 
       var ctrl = this;
 
-      ctrl.test = "Hola Mundo";
       ctrl.view = '/views/login/_login.html';
 
-      ctrl.option = function(option){
+      ctrl.model = {
+        name: "",
+        password: "",
+        email: "",
+        phone: "",
+        address: "",
+        membresia: ""
+      };
 
-        switch(option){
-          case 'register':
-                ctrl.view = ctrl.view = '/views/login/_register.html';
-                break;
-          default:
-            ctrl.view = '/views/login/_login.html';
-        }
-      }
+      ctrl.membresia = [
+        'Semanal',
+        'Mensual',
+        'Anual',
+        'Free'
+      ];
 
 
       ////////////////////////////////////// END

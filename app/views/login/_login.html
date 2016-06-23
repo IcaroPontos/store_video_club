@@ -1,6 +1,5 @@
 <div class="forms login">
-    <h4>Login</h4>
-    <form class="form-horizontal">
+    <form class="form-horizontal" ng-submit="LoginCtrl.login()">
         <div class="form-group">
             <label for="email" class="col-xs-4 control-label">Email</label>
             <div class="col-xs-8">
@@ -19,8 +18,5 @@
             </div>
         </div>
     </form>
-    <div class="change-form col-xs-12 text-center">
-        <a href="" class="col-xs-offset-2 col-xs-4 btn btn-default" ng-click="LoginCtrl.view='views/login/_register.html'">Regsiter</a>
-        <a href="" class="col-xs-offset-2 col-xs-4 btn btn-default" ng-click="LoginCtrl.view='views/login/_login.html'">Login</a>
-    </div>
+        <span class="text-right col-xs-12 btn btn-link" ng-click="LoginCtrl.view='views/login/_register.html'">Regsiter</span>
 </div>
