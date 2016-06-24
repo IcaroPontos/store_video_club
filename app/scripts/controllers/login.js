@@ -20,7 +20,7 @@ angular.module('storeApp')
       ctrl.view = '/views/login/_login.html';
 
       ctrl.model = {
-        name: "",
+        userName: "",
         password: "",
         email: "",
         phone: "",
@@ -35,6 +35,13 @@ angular.module('storeApp')
         'Free'
       ];
 
+      ctrl.login = function(){
+        console.log(ctrl.model);
+      };
+
+      ctrl.register = function(){
+        console.log(ctrl.model);
+      };
 
       ////////////////////////////////////// END
       $scope.LoginCtrl = ctrl;
