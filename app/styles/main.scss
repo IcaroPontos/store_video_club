@@ -34,13 +34,24 @@ body {
   top: 0;
   bottom: 0;
   height: 400px;
-  padding: 10px;
+  padding: 15px;
   width: 350px;
   span{
     text-align: right !important;
   }
+  button[type="submit"]{
+    margin-bottom: -15px;
+    margin-top: 15px;
+  }
 }
 
+.login{
+  height: 200px;
+}
+
+.register{
+  height: 400px;
+}
 
 
 
